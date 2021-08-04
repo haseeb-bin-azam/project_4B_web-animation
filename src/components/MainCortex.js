@@ -5,7 +5,7 @@ import '../App.css'
 import useWebAnimations from "@wellyshen/use-web-animations";
 
 const MainCortex = () => {
-    //movement for braing
+    //movement for brain
     const { ref } = useWebAnimations({
         keyframes: {
             transform: "translate(0, 40px)", // Move by 40px vertically

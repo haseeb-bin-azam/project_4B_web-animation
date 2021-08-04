@@ -1,4 +1,6 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import '../App.css'
 
@@ -6,6 +8,16 @@ import useWebAnimations from "@wellyshen/use-web-animations";
 import image2 from './images/image2.svg';
 
 const Main3 = () => {
+
+    //animation on scroll
+    useEffect(() => {
+        Aos.init({
+            duration: 2000,
+            once: true,
+            easing:"ease-in-out",  
+        });
+    }, [])
+
     //movement for braing
     const { ref } = useWebAnimations({
         keyframes: {
@@ -22,7 +34,7 @@ const Main3 = () => {
     return (
         <div className='body2'>
             <div className='float-container'>
-                <div className='float-child2'>
+                <div className='float-child2' data-aos='fade-right' >
                     <h1 className='websitecopywriting'>Website Copywriting</h1>
                     <p className='websitecopywriting-para'>Your website is a dialogue with your audience. I capture the essence of your business and communicate it clearly. Carefully considered writing and SEO best practices allow me to craft the perfect user journey online. Let me draw the map that guides users every step of the way from discovery, to consideration, to conversion.</p>
                     <span className='span-main'>
@@ -36,7 +48,7 @@ const Main3 = () => {
                         <span className='spantag'> LandingPage</span>
                     </span>
                 </div>
-                <div className='float-child1'>
+                <div className='float-child1' data-aos='fade-left'>
                     <img className='image1' ref={ref} src={image2} alt="" width='100%' />
                 </div>
             </div>

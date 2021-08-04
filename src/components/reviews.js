@@ -1,17 +1,24 @@
 import React from 'react'
 import reviews1 from './images/reviews1.svg'
-import reviews2 from './images/reviews2.svg'
 import reviews3 from './images/reviews3.svg'
 import reviews4 from './images/reviews4.svg'
 import reviews5 from './images/reviews5.svg'
 import reviews6 from './images/reviews6.svg'
-// import Container from 'react-bootstrap/Container'
-// import Row from 'react-bootstrap/Row'
-// import Col from 'react-bootstrap/Col'
-// import "aos/dist/aos.css";
-// import Aos from "aos";
 
 function Reviwes() {
+
+    // const { ref } = useWebAnimations({
+    //     keyframes: {
+    //         transform: "translate(0, 40px)", // Move by 40px vertically
+    //     },
+    //     animationOptions: {
+    //         duration: 2000, // Run for 2000ms
+    //         // iterations: o, // Repeat infinite
+    //         direction: "alternate", // Run the animation forwards and then backwards
+    //         easing: "ease-in-out",
+    //         once: true
+    //     }
+    // });
 
     return (
         <div className='reviws_main_div'>
